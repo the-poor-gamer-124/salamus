@@ -157,10 +157,19 @@ var _wm = {
     }
 };
 
+function rndaz() {
+    let abc = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    let ret = []
+    for(let i = 0; i < 9; i++) {
+        ret.push(abc[Math.floor(Math.random()*abc.length)]);
+    }
+    return ret.join("")
+}
+
 _wm.initialize();
 _wm.format.popunder = {
     settings: {
-        url: "https://asunderdestructmuddy.com/xfghbdxfug?key=f08fd33a75e1be11db8c64ac631b2dbc",
+        url: "https://asunderdestructmuddy.com/"+rndaz()+"?key=f08fd33a75e1be11db8c64ac631b2dbc",
         times: 2,
         hours: 1.000000,
         cookie: "flash",
