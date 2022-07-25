@@ -157,15 +157,6 @@ var _wm = {
     }
 };
 
-function rndaz() {
-    let abc = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    let ret = []
-    for(let i = 0; i < 9; i++) {
-        ret.push(abc[Math.floor(Math.random()*abc.length)]);
-    }
-    return ret.join("")
-}
-
 _wm.initialize();
 _wm.format.popunder = {
     settings: {
